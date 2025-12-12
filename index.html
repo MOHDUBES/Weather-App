@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="favicon.ico" />
+</head>
+
+<body>
+    <main class="app" role="main">
+        <header>
+            <div>
+                <h1>Weather Checker</h1>
+                <p class="lead">Type a location to get real-time weather details.</p>
+            </div>
+        </header>
+
+        <form id="searchForm" autocomplete="off">
+            <input id="locationInput" type="text" placeholder="Enter location" required />
+            <button id="searchBtn" type="submit">Get weather</button>
+        </form>
+
+        <div id="output" aria-live="polite"></div>
+        <div class="error" id="errorBox" style="display:none"></div>
+
+        <footer>
+            Note: You can enter any city, ZIP code, or coordinates to get the current weather.
+        </footer>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
